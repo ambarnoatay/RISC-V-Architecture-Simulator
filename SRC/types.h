@@ -10,7 +10,7 @@ enum class Opcode {
     HALT = 0b0000000, // Custom opcode for halting the processor
     NOP = 0b0000001
 };
-
+typedef uint64_t Addr;
 struct Instruction {
     Opcode opcode;
     int rd;
